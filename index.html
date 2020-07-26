@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Test 01</title>
+
+    <script>
+        /*let est = false
+        function ligar(){
+            if(est === false){
+                window.document.getElementById('lampada').src = "lampada-acesa.jpg"
+            }
+        }
+        function desligar(){
+            if(est === false){
+                window.document.getElementById('lampada').src = "lampada-apagada.jpg"
+            }  
+        }
+        function quebrar(){
+            if(est === false){
+                window.document.getElementById('lampada').src = "lampada-quebrada.jpg"
+            }
+            est = true
+        }
+        function trocar(){
+            est = false
+            window.document.getElementById('lampada').src = "lampada-apagada.jpg"
+        }*/
+        /*
+        var val = false
+        function estado(est){
+            if(val === false){
+                if(est===1){
+                    window.document.getElementById('lampada').src = "lampada-acesa.jpg"
+                }else if(est===2){
+                    window.document.getElementById('lampada').src = "lampada-apagada.jpg"
+                }else if(est===3){
+                    val = true
+                    window.document.getElementById('lampada').src = "lampada-quebrada.jpg"
+                }
+            }else if(est===0){
+                window.document.getElementById('lampada').src = "lampada-apagada.jpg"
+                val = false
+            }
+        }*/
+        let sit = false
+        function estado(text, n=19){
+            console.log(n)
+            if(sit===false && n === 2){
+                document.getElementById('lampada').src = text
+                if(text==="lampada-quebrada.jpg"){
+                    document.getElementById('lampada').src = text
+                    sit = true
+                }
+            }else if(text==="lampada-trocada.jpg" && sit === true){
+                document.getElementById('lampada').src = text
+                sit = false
+            }
+        }
+    </script>
+</head>
+<body>
+    <section>
+        <img src="lampada-apagada.jpg" id="lampada">
+        <input id="bt-lg" type="button" value="Ligar" onclick="estado('lampada-acesa.jpg',2)">
+        <input id="bt-dg" type="button" value="Desligar" onclick="estado('lampada-apagada.jpg',2)">
+        <input id="bt-qb" type="button" value="Quebrar" onclick="estado('lampada-quebrada.jpg',2)">
+        <input id="bt-tc" type="button" value="Trocar" onclick="estado('lampada-trocada.jpg')">
+    </section>
+    
+</body>
+</html>

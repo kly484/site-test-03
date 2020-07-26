@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+body{
+    background-color: darkcyan;
+}
+
+section{
+    background-color: rgba(139, 0, 139, 0.26);
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    border: 3px solid black;
+    position: relative;
+}
+
+section img{
+    margin-top: 20%;
+    margin-left: 35%;
+}
+
+#bt-lg{
+    position: absolute;
+    right: 60%;
+    bottom: 35%;
+    background-color: rgb(123, 200, 150);
+    padding: 10px;
+    color: cornsilk;
+    border-radius: 10px;
+}
+
+#bt-dg{
+    position: absolute;
+    right: 30%;
+    bottom: 35%;
+    background-color: rgb(123, 200, 150);
+    padding: 10px;
+    color: cornsilk;
+    border-radius: 10px;
+}
+
+#bt-qb{
+    position: absolute;
+    right: 45%;
+    bottom: 35%;
+    background-color: rgb(123, 200, 150);
+    padding: 10px;
+    color: cornsilk;
+    border-radius: 10px;
+}
+
+#bt-tc{
+    position: absolute;
+    right: 46%;
+    bottom: 25%;
+    background-color: rgb(123, 200, 150);
+    padding: 10px;
+    color: cornsilk;
+    border-radius: 10px;
+}
